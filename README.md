@@ -10,15 +10,12 @@ Search `index.html` for these placeholders and replace them:
 |---|---|
 | `TAGLINE` | Signed with care. Delivered to your door. |
 | `REVIEW_n_TEXT` / `REVIEW_n_NAME` | Real client reviews only. The section is hidden for now: to show it, remove `hidden` from `<section id="reviews">` and uncomment the Reviews menu link |
-| `FORMSPREE_ID` | From formspree.io (see below) |
 
 **Images (optional):** add `images/hero.jpg` for the hero background.
 
 ## 2. Contact form
 
-GitHub Pages can't process forms on its own, so the form uses Formspree, which has a free tier:
-1. Sign up at https://formspree.io and create a form.
-2. Copy the form ID (the part after `/f/`) into `FORMSPREE_ID` in `index.html`.
+GitHub Pages can't process forms on its own, so the form doesn't use a form service. When a visitor clicks Send, `script.js` opens their email app with the message filled in, addressed to the `data-email` address on the `<form>` in `index.html`.
 
 ## 3. Publish on GitHub Pages
 

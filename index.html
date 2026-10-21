@@ -235,13 +235,14 @@
           <a href="sms:+19403731802" class="btn btn-outline">Text Us</a>
         </div>
       </div>
-      <!-- The form is sent through Formspree (free). Replace FORMSPREE_ID with the ID from formspree.io. -->
-      <form class="contact-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
+      <!-- No form service: on submit, script.js opens the visitor's email app with the message filled in. -->
+      <form class="contact-form" data-email="contact@dfwnotarytoyou.com">
         <label>Name<input type="text" name="name" required></label>
         <label>Email<input type="email" name="email" required></label>
         <label>Phone<input type="tel" name="phone"></label>
         <label>How can we help?<textarea name="message" rows="5" placeholder="Type of document, number of signers, location, and preferred date and time"></textarea></label>
         <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="small">This opens your email app with your message ready to send.</p>
       </form>
     </div>
   </section>
